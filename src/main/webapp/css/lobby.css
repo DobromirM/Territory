@@ -1,0 +1,196 @@
+body
+{
+    overflow: hidden;
+}
+
+#main
+{
+    font-size:   1vw;
+    font-weight: bold;
+    color:       #364F6B;
+}
+
+.lobby-title
+{
+    width:         100%;
+    float:         left;
+    position:      relative;
+    text-align:    center;
+    margin-bottom: 6%;
+    margin-top:    1%;
+    font-size:     2vw;
+}
+
+.name
+{
+    position:      relative;
+    margin-bottom: 7%;
+}
+
+label input
+{
+    margin-left: 1.2%;
+    border:      solid 0.01vw black;
+}
+
+.span-color
+{
+    padding: 5vw;
+    border:  solid 0.01vw black;
+    margin:  1%;
+    cursor:  pointer;
+}
+
+input[type=radio]
+{
+    display: none;
+}
+
+input[type=radio]:checked
+{
+    position:           relative;
+    left:               -11.4%;
+    width:              1%;
+    display:            inline;
+    border:             5vw solid rgba(0, 0, 0, 0.3);
+    border-top-width:   5.1vw;
+    border-right-width: 4.9vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+}
+
+input[type=radio]:checked + label > span
+{
+    margin-left: -9.5%;
+}
+
+.submit-button
+{
+    width:      11%;
+    left:       40%;
+    margin-top: 10%;
+    position:   relative;
+}
+
+.submit-button input
+{
+    position:         relative;
+    float:            left;
+    text-align:       center;
+    border:           0.7vw solid #364F6B;
+    background-color: white;
+    padding:          1.5vw 5vw;
+    margin-bottom:    2vw;
+    text-decoration:  none;
+    color:            #364F6B;
+    font-size:        2vw;
+    font-weight:      bold;
+    cursor:           pointer;
+}
+
+.submit-button input:hover
+{
+    background-color: lightgray;
+}
+
+#color-pink
+{
+    background-color: pink;
+}
+
+#color-aquamarine
+{
+    background-color: aquamarine;
+}
+
+#color-lawngreen
+{
+    background-color: lawngreen;
+}
+
+#color-khaki
+{
+    background-color: khaki;
+}
+
+#color-violet
+{
+    background-color: violet;
+}
+
+#color-tomato
+{
+    background-color: tomato;
+}
+
+#color-steelblue
+{
+    background-color: steelblue;
+}
+
+.id
+{
+    margin-top: 6%;
+}
+
+div + .rooms
+{
+    padding-top: 12%;
+}
+
+input + .rooms
+{
+    margin-top: 13%;
+}
+
+.submit-button-watch
+{
+    
+    top:      80%;
+    margin-top: 0;
+    position: absolute;
+}
+
+.room
+{
+    padding: 5vw;
+    border:  solid 0.01vw black;
+    margin:  1%;
+    cursor:  pointer;
+}
+
+.room-id
+{
+    position:       absolute;
+    margin-left:    -8.4%;
+    margin-top:     -2%;
+    pointer-events: none;
+}
+
+.room-players
+{
+    position:       absolute;
+    margin-left:    -8.4%;
+    margin-top:     -0.5%;
+    pointer-events: none;
+}
+
+.room-status
+{
+    position:       absolute;
+    width:          6vw;
+    margin-left:    -9vw;
+    font-size:      1vw;
+    pointer-events: none;
+    margin-top:     2vw;
+}
+
+.room-status-text
+{
+    float:      left;
+    width:      100%;
+    text-align: center;
+    
+}

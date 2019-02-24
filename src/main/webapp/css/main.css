@@ -1,0 +1,41 @@
+#logo
+{
+    margin-top: -13%;
+    width:      100%;
+}
+
+#logo img
+{
+    width:        50%;
+    margin-left:  25%;
+    margin-right: 25%;
+}
+
+#menu
+{
+    margin-top:   -13%;
+    width:        20%;
+    margin-left:  40%;
+    margin-right: 40%;
+}
+
+#menu a
+{
+    position:        relative;
+    float:           left;
+    width:           100%;
+    text-align:      center;
+    border:          0.7vw solid #364F6B;
+    padding-top:     1.5vw;
+    padding-bottom:  1.5vw;
+    margin-bottom:   2vw;
+    text-decoration: none;
+    color:           #364F6B;
+    font-size:       2vw;
+    font-weight:     bold;
+}
+
+#menu a:hover
+{
+    background-color: lightgrey;
+}

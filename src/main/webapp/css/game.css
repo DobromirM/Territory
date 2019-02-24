@@ -1,0 +1,197 @@
+body
+{
+    font:     2vw "Calibri", Futura, sans-serif;
+    overflow: hidden;
+}
+
+.disconnected
+{
+    background-color: #FFBABA;
+    height:           100vw;
+    overflow:         hidden;
+}
+
+.disconnected-text
+{
+    color:      #D8000C;
+    margin-top: 22%;
+    text-align: center;
+}
+
+.game-status
+{
+    padding-top: 0.5vw;
+    text-align:  center;
+}
+
+.player-on-turn
+{
+    font-size:  1.4vw;
+    text-align: center;
+}
+
+.game-error
+{
+    color:         #D8000C;
+    margin-bottom: -3vw;
+    margin-top:    1%;
+    text-align:    center;
+    font-size:     1.4vw;
+}
+
+.game-error:empty
+{
+    padding-top: 1.57vw;
+}
+
+.game-winner
+{
+    color: goldenrod;
+}
+
+.board
+{
+    width:        40%;
+    margin-top:   5%;
+    margin-left:  30%;
+    margin-right: 30%;
+}
+
+.tile
+{
+    background:   #FFFFFF;
+    height:       4vw;
+    width:        4vw;
+    border:       0.05vw solid #364F6B;
+    font-size:    2vw;
+    float:        left;
+    font-weight:  bold;
+    margin-right: -0.1vw;
+    margin-top:   -0.1vw;
+}
+
+.tile.selected
+{
+    background-color: lightgrey;
+}
+
+.tile:hover
+{
+    background-color: lightgrey;
+}
+
+.tile:focus
+{
+    outline: none;
+}
+
+.area
+{
+    margin-top:      2%;
+    display:         flex;
+    justify-content: center;
+}
+
+.player
+{
+    width:          20%;
+    float:          left;
+    text-align:     center;
+    border:         0.1vw solid #364F6B;
+    margin:         0.1%;
+    padding-bottom: 1.5vw;
+    padding-top:    0.8vw;
+    pointer-events: none;
+}
+
+.hand
+{
+    font-size:       0.7vw;
+    margin-top:      5%;
+    display:         flex;
+    justify-content: center;
+    height:          7.5vw;
+}
+
+.card
+{
+    width:            30%;
+    padding-bottom:   6vw;
+    float:            left;
+    border:           0.1vw solid #364F6B;
+    margin:           1%;
+    background-color: white;
+    
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select:  none; /* Internet Explorer/Edge */
+    user-select:      none;
+    
+    cursor:           pointer;
+}
+
+.card#DOUBLE
+{
+    background-image:    url(../img/double.png);
+    background-size:     7vw 7vw;
+    background-position: -0.5vw 0.6vw;
+}
+
+.card#FREEDOM
+{
+    background-image:    url(../img/freedom.png);
+    background-size:     7vw 7vw;
+    background-position: -0.5vw 0.6vw;
+}
+
+.card#REPLACEMENT
+{
+    background-image:    url(../img/replacement.png);
+    background-size:     6vw 6vw;
+    background-position: 0.1vw 0.8vw;
+    
+}
+
+.card.selected
+{
+    margin-top:    -1vw;
+    margin-bottom: 1vw;
+}
+
+.you
+{
+    pointer-events: auto;
+}
+
+.ready
+{
+    background-color: gray;
+    color:            white;
+    padding:          0.7vw 2vw;
+    text-align:       center;
+    font-size:        1vw;
+    margin-top:       1vw;
+    cursor:           pointer;
+    border:           0.1vw solid #364F6B;
+}
+
+.ready.active
+{
+    background-color: green;
+}
+
+ol, ul
+{
+    padding-left: 30px;
+}
+
+.board-row:after
+{
+    clear:   both;
+    content: "";
+    display: table;
+}
+
+.status
+{
+    margin-bottom: 10px;
+}
