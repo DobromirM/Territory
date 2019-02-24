@@ -1,7 +1,7 @@
 # Territory
 Multiplayer turn based board game built using Java and React.
 
-#1. Game
+# 1. Game
 
 The game is played by two to five players. Each player has to choose a name and a colour. Players take turns placing tiles on the board, the first player to start is the first player that connects to the specific room. Tiles can be placed only on empty cells and only on cells adjacent to one of the other tiles of the player.
 
@@ -15,14 +15,14 @@ Freedom card: allows the player to place a stone on any empty cell, even if it i
 
 A player is called 'blocked' if they cannot make a move, even if using one of the influence cards available to them. If a player is blocked, they skip their turn. The game ends when all the players are blocked. The winner of the game is the player with the highest number of stones on the board. If there are several such players, the one of them who joined the game last, wins.
 
-#2. Architecture
+# 2. Architecture
 
 The project is split into front-end and back-end. The back-end is built in Java using an
 embedded tomcat server. It contains three modules, one for the game logic, one for the
 endpoints and one for the bot. The front-end is built using React.
 
 
-#3. Interface
+# 3. Interface
 The user interface is built similarly to a typical game. The main page is the main menu
 which contains link to all the different pages of the game. It has two separate modes, Play
 and Watch. When one of the two modes is selected, the player is sent to a lobby in which he
@@ -41,7 +41,7 @@ disconnected player. Another additional feature is that if only one player is no
 board is automatically filled with tiles for that player so that he won’t have to select each tile
 individually.
 
-#4. Bot
+# 4. Bot
 The bot player can be started by specifying custom name, color and the room you wish him
 to join. After joining it waits for 30 seconds before setting its status to ready. The bot waits
 for 1 second before sending his move. The logic is split into three phases:
@@ -68,5 +68,13 @@ taken. It then populates the guarded tiles and as a last resort it uses any free
 replacement cards that he might have left in his hand.
 
 After the game has finished the bot waits for a minute before disconnecting.
+
+# 5. Screenshots
+
+![Screenshot](screenshots/territory-menu.png)
+
+
+![Screenshot](screenshots/territory-lobby.png)
+
 
 ![Screenshot](screenshots/territory-game.png)
